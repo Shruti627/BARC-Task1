@@ -21,7 +21,7 @@ async function ensureSuperAdmin() {
   db.run("DELETE FROM users WHERE role='superadmin'", (err) => {
     if (err) return console.error("Error deleting old superadmin:", err);
 
-    console.log("Old superadmin(s) removed");
+    console.log("Old superadmin removed if exixted ..");
 
     bcrypt.hash(process.env.SUPERADMIN_PASSWORD, 10, (err, hashedPassword) => {
       if (err) return console.error(err);
