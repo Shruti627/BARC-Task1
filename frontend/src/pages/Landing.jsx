@@ -28,7 +28,7 @@ export default function Landing() {
         });
         const role = res.data.role;
 
-        // ✅ Save role in localStorage
+        
         localStorage.setItem("role", role);
 
         navigate(`/${role}`);
@@ -65,7 +65,7 @@ export default function Landing() {
               <label style={styles.label}>Full Name</label>
               <input
                 name="name"
-                placeholder="John Doe"
+                placeholder="full name"
                 onChange={handleChange}
                 style={styles.input}
               />
@@ -77,7 +77,7 @@ export default function Landing() {
             <input
               name="email"
               type="email"
-              placeholder="name@company.com"
+              placeholder="name@example.com"
               onChange={handleChange}
               style={styles.input}
             />
@@ -88,7 +88,7 @@ export default function Landing() {
             <input
               name="password"
               type="password"
-              placeholder="••••••••"
+              placeholder="•••••••"
               onChange={handleChange}
               style={styles.input}
             />
