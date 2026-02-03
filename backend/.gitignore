@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# SQLite database
+database.sqlite
+
+# React build output
+/build
+/dist
